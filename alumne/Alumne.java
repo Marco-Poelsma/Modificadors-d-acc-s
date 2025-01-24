@@ -8,4 +8,16 @@ public class Alumne { //El public fa que sigui visible des de qualsevol altra cl
     private String generateUsername (String name) { //Els modificadors es poden aplicar a classes, mètodes i atributs.
         return name.strip().toLowerCase().replace(" ", "");
     }
+
+    /*
+     * Podem montar getters i setters públics per a poder accedir o modificar atributs privats:
+     */
+    public String getPassword() { //Un getter ens permet accedir a un atribut privat
+        return password;
+    }
+
+    public void setPassword(String password) { //Un setter ens permet modificar un atribut privat
+        this.password = password;
+    }
+    
 }
