@@ -5,7 +5,7 @@ public class Alumne { //El public fa que sigui visible des de qualsevol altra cl
     protected String username; //Només s'hi pot accedir des del paquet on es troba i des de les seves subclasses
     private String password; //Només s'hi pot accedir des de la mateixa classe
 
-    String generateUsername (String name) {
+    private String generateUsername (String name) { //Els modificadors es poden aplicar a classes, mètodes i atributs.
         return name.strip().toLowerCase().replace(" ", "");
     }
 }
