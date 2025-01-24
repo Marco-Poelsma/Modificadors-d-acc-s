@@ -11,13 +11,15 @@ public class Alumne { //El public fa que sigui visible des de qualsevol altra cl
 
     /*
      * Podem montar getters i setters públics per a poder accedir o modificar atributs privats:
-     */
-    public String getPassword() { //Un getter ens permet accedir a un atribut privat
-        return password;
+     * Cal recalcar que és important assegurar-se de quins atributs volem visibles i quins no, 
+     * ja que si es permet l'accés a atributs privats des de fora de la classe, es perd la capacitat de controlar quan i com es modifiquen aquests atributs.
+    */
+    public String getName() { //Un getter ens permet accedir a un atribut privat
+        return name;
     }
 
-    public void setPassword(String password) { //Un setter ens permet modificar un atribut privat
-        this.password = password;
+    public void setName(String newName) { //Un setter ens permet modificar un atribut privat
+        this.name = newName;
     }
-    
+
 }
